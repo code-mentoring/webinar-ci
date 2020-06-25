@@ -33,11 +33,14 @@ jobs:
       matrix:
         node_version: [13]
         os: [ubuntu-latest, windows-latest, macOS-latest]
-        
+
     steps:
     - uses: actions/checkout@v2
-    
+
+    - name: Install depedencies
+      run: yarn
+
     - name: Run test commmand
       run: yarn test
 
-        
+
