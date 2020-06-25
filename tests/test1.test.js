@@ -1,5 +1,5 @@
-describe('Something broken', () => {
-  it('should break', () => {
-    expect(1).toEqual(2);
+describe('Nothing broken', () => {
+  it('should not break', () => {
+    expect(2).toEqual(2);
   });
 });
